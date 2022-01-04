@@ -36,7 +36,7 @@ jobs:
     - name: liblapack-dev
       run: sudo apt-get install -y liblapack-dev
     - name: libboost-all-dev
-      run: sudo apt-get install -y libbboost-all-dev
+      run: sudo apt-get install -y libboost-all-dev
     - name: libopencv-core3.2
       run: sudo apt-get install -y libopencv-core3.2
     - name: libopencv-imgproc3.2

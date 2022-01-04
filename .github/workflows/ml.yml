@@ -69,6 +69,6 @@ jobs:
       run: pip install pyyaml
     - name: typing
       run: pip install typing
-    - name: LIB: SHOGUN
+    - name: library shogun
       run: git clone https://github.com/shogun-toolbox/shogun; cd shogun; 
            git checkout f7255cf2cc6b5116e50840816d70d21e7cc039bb

@@ -43,8 +43,10 @@ jobs:
       run: sudo apt-get install -y liblapack-dev
     - name: libboost-all-dev
       run: sudo apt-get install -y libboost-all-dev
-    - name: libopencv-core3.2
-      run: sudo apt-get install -y libopencv-core3.2
+    - name: libopencv-dev
+      run: sudo apt-get install -y libopencv-dev
+    - name: python3-opencv
+      run: sudo apt-get install -y python3-opencv
     - name: libopencv-imgproc3.2
       run: sudo apt-get install -y libopencv-imgproc3.2
     - name: libopencv-dev

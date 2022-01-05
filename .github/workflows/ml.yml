@@ -57,8 +57,8 @@ jobs:
       run: sudo apt-get install -y libjson-c-dev
     - name: libx11-dev
       run: sudo apt-get install -y libx11-dev
-    - name: openjdf-8-jdk
-      run: sudo apt-get install -y openjdf-8-jdk
+    - name: openjdk-8-jdk
+      run: sudo apt-get install -y openjdk-8-jdk
     - name: wget
       run: sudo apt-get install -y wget
     - name: ninja-build

@@ -49,8 +49,6 @@ jobs:
       run: sudo apt-get install -y python3-opencv
     - name: libopencv-dev
       run: sudo apt-get install -q -y libopencv-dev
-    - name: libopencv-highgui3.2
-      run: sudo apt-get install -y libopencv-highgui3.2
     - name: libopencv-highgui-dev
       run: sudo apt-get install -y libopencv-highgui-dev
     - name: libhdf5-dev

@@ -1,3 +1,15 @@
 [submodule "external/eigen"]
 	path = external/eigen
 	url = https://github.com/eigenteam/eigen-git-mirror
+[submodule "external/dlib"]
+	path = external/dlib
+	url = https://github.com/davisking/dlib
+[submodule "external/mlpack"]
+	path = external/mlpack
+	url = https://github.com/mlpack/mlpack
+[submodule "external/plotcpp"]
+	path = external/plotcpp
+	url = https://github.com/Kolkir/plotcpp
+[submodule "external/pytorch"]
+	path = external/pytorch
+	url = https://github.com/pytorch/pytorch

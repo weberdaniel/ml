@@ -23,5 +23,4 @@ endif()
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 add_subdirectory(external)
-add_subdirectory(doc)
 add_subdirectory(app)

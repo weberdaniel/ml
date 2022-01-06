@@ -1,0 +1,39 @@
+[submodule "external/eigen/eigen"]
+	path = external/eigen/eigen
+	url = https://github.com/eigenteam/eigen-git-mirror
+[submodule "external/dlib/dlib"]
+	path = external/dlib/dlib
+	url = https://github.com/davisking/dlib
+[submodule "external/pytorch/pytorch"]
+	path = external/pytorch/pytorch
+	url = https://github.com/pytorch/pytorch
+[submodule "external/xtensor/xtensor"]
+	path = external/xtensor/xtensor
+	url = https://github.com/xtensor-stack/xtensor
+[submodule "external/xtensor-blas/xtensor-blas"]
+	path = external/xtensor-blas/xtensor-blas
+	url = https://github.com/xtensor-stack/xtensor-blas
+[submodule "external/fast-cpp-csv-parser/fast-cpp-csv-parser"]
+	path = external/fast-cpp-csv-parser/fast-cpp-csv-parser
+	url = https://github.com/ben-strasser/fast-cpp-csv-parser
+[submodule "external/rapidjson/rapidjson"]
+	path = external/rapidjson/rapidjson
+	url = https://github.com/Tencent/rapidjson
+[submodule "external/xtl/xtl"]
+	path = external/xtl/xtl
+	url = https://github.com/xtensor-stack/xtl
+[submodule "external/mlpack/mlpack"]
+	path = external/mlpack/mlpack
+	url = https://github.com/mlpack/mlpack
+[submodule "external/armadillo-code/armadillo-code"]
+	path = external/armadillo-code/armadillo-code
+	url = https://gitlab.com/conradsnicta/armadillo-code
+[submodule "external/shark/shark"]
+	path = external/shark/shark
+	url = https://github.com/Shark-ML/Shark
+[submodule "external/shogun/shogun"]
+	path = external/shogun/shogun
+	url = https://github.com/shogun-toolbox/shogun
+[submodule "external/plotcpp/plotcpp"]
+	path = external/plotcpp/plotcpp
+	url = https://github.com/Kolkir/plotcpp

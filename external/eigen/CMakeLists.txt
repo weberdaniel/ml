@@ -20,7 +20,7 @@ ExternalProject_Add(eigen URL ${CMAKE_CURRENT_LIST_DIR}/eigen
   INSTALL_COMMAND cmake -E echo "-- Skip install step.")
 
 # All of the code will be put into the build folder, from
-# where ehaders can be included for the build. Retrieve
+# where headers can be included for the build. Retrieve
 # the location of the build binary and build source directory
 
 ExternalProject_Get_Property(eigen source_dir)

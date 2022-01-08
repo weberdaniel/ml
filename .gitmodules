@@ -37,3 +37,6 @@
 [submodule "external/plotcpp/plotcpp"]
 	path = external/plotcpp/plotcpp
 	url = https://github.com/Kolkir/plotcpp
+[submodule "external/blas/OpenBLAS"]
+	path = external/blas/OpenBLAS
+	url = https://github.com/xianyi/OpenBLAS

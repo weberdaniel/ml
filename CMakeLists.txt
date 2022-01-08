@@ -1,5 +1,5 @@
 # initialize the project
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.22)
 
 project(ML
         VERSION 0.1

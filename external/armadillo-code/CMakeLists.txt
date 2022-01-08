@@ -23,6 +23,7 @@ set(ARMADILLO_LIBS ${binary_dir}/libarmadillo.so
                    ${binary_dir}/libarmadillo.so.10.8.0)
 
 add_library(Armadillo INTERFACE IMPORTED GLOBAL)
+add_dependencies(Armadillo BLAS::BLAS)
 target_include_directories(Armadillo INTERFACE ${ARMADILLO_INCLUDE_DIRS})
 target_link_libraries(Armadillo INTERFACE ${ARMADILLO_LIBS})
 

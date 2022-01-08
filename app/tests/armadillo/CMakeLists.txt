@@ -9,4 +9,4 @@ add_executable(testarmadillo
 	       main.cpp)
 
 target_compile_features(testit PRIVATE cxx_std_17)
-target_link_libraries(testarmadillo PRIVATE Armadillo)
+target_link_libraries(testarmadillo PRIVATE Armadillo BLAS::BLAS)

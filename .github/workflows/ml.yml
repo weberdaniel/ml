@@ -69,6 +69,14 @@ jobs:
       run: sudo apt-get install -y vim
     - name: python3-venv
       run: sudo apt-get install -y python3-venv
+    - name: libeigen3-dev
+      run: sudo apt-get install -y libeigen3-dev
+    - name: libmlpack-dev
+      run: sudo apt-get install -y libmlpack-dev
+    - name: libarmadillo-dev
+      run: sudo apt-get install -y libarmadillo-dev
+    - name: libblas-dev
+      run: sudo apt-get install -y libblas-dev
     - name: pyyaml
       run: pip install pyyaml
     - name: typing

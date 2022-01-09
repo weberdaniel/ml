@@ -1,3 +1,11 @@
+# Author: Daniel Weber
+# About: This should setup Armadillo libraries. There are two
+#        ways: use the local installation which can be installed via
+#        libarmadillo-dev package and pull it in with find_package.
+#        Or download the source and build it from scratch.
+# TODO: only init armadillo submodule if no local installation is present
+
+
 cmake_minimum_required(VERSION 3.22)
 
 project(external.armadillo)
@@ -13,11 +21,10 @@ message("-- Creating Target Armadillo")
 
 find_package(Armadillo REQUIRED)
 
-#TODO: only download armadillo codebase if no local installation is present
-
 if(ARMADILLO_FOUND)
   message("-- Creating Target Armadillo - local installation used")
   add_library(Armadillo INTERFACE IMPORTED GLOBAL)
+  # Armadillo depends on BLAS libraries
   add_dependencies(Armadillo BLAS::BLAS)
   target_include_directories(Armadillo INTERFACE ${ARMADILLO_INCLUDE_DIRS})
   target_link_libraries(Armadillo INTERFACE ${ARMADILLO_LIBRARIES})
@@ -34,6 +41,7 @@ elseif()
                      ${binary_dir}/libarmadillo.so.10
                      ${binary_dir}/libarmadillo.so.10.8.0)
   add_library(Armadillo INTERFACE IMPORTED GLOBAL)
+  # Armadillo depends on BLAS libraries
   add_dependencies(Armadillo BLAS::BLAS)
   target_include_directories(Armadillo INTERFACE ${ARMADILLO_INCLUDE_DIRS})
   target_link_libraries(Armadillo INTERFACE ${ARMADILLO_LIBS})

@@ -1,3 +1,8 @@
+# Author: Daniel Weber
+# About: This shall build dlib. There is only one way to build it.
+#        pull it in with add_subdirectory(dlib) and it will automatically
+#        create target dlib::dlib. This is recommended because it is only
+#        way to enable debug mode.
 cmake_minimum_required(VERSION 3.22)
 
 project(external.dlib)

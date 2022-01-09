@@ -1,3 +1,7 @@
+# Author: Daniel Weber
+# About: This provides Eigen library. Two ways: Eitehr from
+#        scratch or pull in package libeigen3-dev via
+#        find_package.
 cmake_minimum_required(VERSION 3.22)
 
 #create a project for the eigen library

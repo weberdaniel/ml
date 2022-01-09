@@ -1,3 +1,9 @@
+# Author: Daniel Weber
+# About: This sets up the BLAS library. It is possible to install it via a package
+#        libblas-dev and pull it in via find_package. Also it is possible to download
+#        it and build it from scratch.
+# TODO: only download BLAS codebase if local not found
+
 cmake_minimum_required(VERSION 3.22)
 
 project(external.blas)
@@ -14,8 +20,6 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 message("-- Creating Target Blas")
 
 find_package(BLAS REQUIRED)
-
-#TODO: only download BLAS codebase if local not found
 
 if(BLAS_FOUND)
   set_target_properties(BLAS::BLAS PROPERTIES IMPORTED_GLOBAL TRUE)

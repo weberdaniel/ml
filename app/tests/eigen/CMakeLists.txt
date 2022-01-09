@@ -9,4 +9,4 @@ add_executable(testit
 	       main.cpp)
 
 target_compile_features(testit PRIVATE cxx_std_17)
-target_link_libraries(testit PRIVATE Eigen)
+target_link_libraries(testit PRIVATE Eigen3::Eigen)

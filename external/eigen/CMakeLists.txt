@@ -18,10 +18,15 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 #TODO: check wether EIgen library is already installed on the
 #      system
 
-message("-- Creating Target Eigen")
+message("-- Creating Target Eigen3::Eigen")
 
-find_package(Eigen3 REQUIRED)
+find_package(Eigen3 REQUIRED NO_MODULE)
 
+if(TARGET Eigen3::Eigen)
+  message("-- Creating Target Eigen3::Eigen - use local installation ${EIGEN3_INCLUDE_DIR}")
+  set_target_properties(Eigen3::Eigen PROPERTIES IMPORTED_GLOBAL TRUE)
+elseif()
+message("-- Creating Target Eigen3::Eigen - use remote repository")
 # use the ExternalProject_Add to add the corresponding git
 # submodule. In this case we have a header-only-library. 
 
@@ -44,12 +49,14 @@ set(EIGEN_INCLUDE_DIRS ${binary_dir}
 # global Cmake namespace to make it accessible from the outside
 # of this project.
 
-add_library(Eigen INTERFACE IMPORTED GLOBAL)
+add_library(Eigen3::Eigen INTERFACE IMPORTED GLOBAL)
 
 # add the include directorys
 
-target_include_directories(Eigen INTERFACE ${EIGEN_INCLUDE_DIRS})
+target_include_directories(Eigen3::Eigen INTERFACE ${EIGEN_INCLUDE_DIRS})
 
 # we are done already since there are no binaries
 
-message("-- Creating Target Eigen - done")
+endif()
+
+message("-- Creating Target Eigen3::Eigen - done")

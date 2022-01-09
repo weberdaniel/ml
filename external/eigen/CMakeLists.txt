@@ -11,7 +11,12 @@ include(ExternalProject)
 # add all local cmake modules
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 
+#TODO: check wether EIgen library is already installed on the
+#      system
+
 message("-- Creating Target Eigen")
+
+find_package(Eigen3 REQUIRED)
 
 # use the ExternalProject_Add to add the corresponding git
 # submodule. In this case we have a header-only-library. 

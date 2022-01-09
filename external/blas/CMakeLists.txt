@@ -15,6 +15,8 @@ message("-- Creating Target Blas")
 
 find_package(BLAS REQUIRED)
 
+#TODO: only download BLAS codebase if local not found
+
 if(BLAS_FOUND)
   set_target_properties(BLAS::BLAS PROPERTIES IMPORTED_GLOBAL TRUE)
   message("-- Creating Target Blas - done")

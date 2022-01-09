@@ -77,6 +77,8 @@ jobs:
       run: sudo apt-get install -y libarmadillo-dev
     - name: libblas-dev
       run: sudo apt-get install -y libblas-dev
+    - name: libensmallen-dev
+      run: sudo apt-get install -y libensmallen-dev
     - name: pyyaml
       run: pip install pyyaml
     - name: typing

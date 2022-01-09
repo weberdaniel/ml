@@ -4,9 +4,6 @@
 [submodule "external/dlib/dlib"]
 	path = external/dlib/dlib
 	url = https://github.com/davisking/dlib
-[submodule "external/pytorch/pytorch"]
-	path = external/pytorch/pytorch
-	url = https://github.com/pytorch/pytorch
 [submodule "external/xtensor/xtensor"]
 	path = external/xtensor/xtensor
 	url = https://github.com/xtensor-stack/xtensor

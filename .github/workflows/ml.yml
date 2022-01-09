@@ -83,6 +83,8 @@ jobs:
       run: sudo apt-get install -y libblas-dev
     - name: libensmallen-dev
       run: sudo apt-get install -y libensmallen-dev
+    - name: txt2man
+      run: sudo apt-get install -y txt2man
     - name: pyyaml
       run: pip install pyyaml
     - name: typing

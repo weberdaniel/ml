@@ -22,9 +22,6 @@
 [submodule "external/xtl/xtl"]
 	path = external/xtl/xtl
 	url = https://github.com/xtensor-stack/xtl
-[submodule "external/mlpack/mlpack"]
-	path = external/mlpack/mlpack
-	url = https://github.com/mlpack/mlpack
 [submodule "external/armadillo-code/armadillo-code"]
 	path = external/armadillo-code/armadillo-code
 	url = https://gitlab.com/conradsnicta/armadillo-code

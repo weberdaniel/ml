@@ -73,6 +73,8 @@ jobs:
       run: sudo apt-get install -y libeigen3-dev
     - name: libmlpack-dev
       run: sudo apt-get install -y libmlpack-dev
+    - name: mlpack-bin
+      run: sudo apt-get install -y mlpack-bin
     - name: libarmadillo-dev
       run: sudo apt-get install -y libarmadillo-dev
     - name: libblas-dev

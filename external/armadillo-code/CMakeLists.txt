@@ -15,6 +15,8 @@ set(DESCRIPTION "Armadillo")
 
 include(ExternalProject)
 
+#add_definitions(-DARMA_DONT_USE_WRAPPER)
+
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 
 message("-- Creating Target Armadillo")

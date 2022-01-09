@@ -77,6 +77,8 @@ jobs:
       run: sudo apt-get install -y mlpack-bin
     - name: libarmadillo-dev
       run: sudo apt-get install -y libarmadillo-dev
+    - name: libcereal-dev
+      run: sudo apt-get install -y libcereal-dev
     - name: libblas-dev
       run: sudo apt-get install -y libblas-dev
     - name: libensmallen-dev

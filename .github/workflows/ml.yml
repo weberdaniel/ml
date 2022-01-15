@@ -25,6 +25,10 @@ jobs:
       run: sudo apt-get install -y build-essential
     - name: gdb
       run: sudo apt-get install -y gdb
+    - name: python-ply 
+      run: sudo apt-get install -y python-ply
+    - name: ctags
+      run: sudo apt-get install -y ctags
     - name: git
       run: sudo apt-get install -y git
     - name: cmake
